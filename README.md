@@ -2,10 +2,10 @@
 
 
 Anomaly detection analysis was the subject of the proposed project. The desired deliverable was an integrated product that included 
-a) algorithm for analyzing relevant data, 
-b) dashboard for visualization of the analytic results, 
-c) modeling documentation and user manual, 
-d) technical demo of the integrated capability. 
+- algorithm for analyzing relevant data, 
+- dashboard for visualization of the analytic results, 
+- modeling documentation and user manual, 
+- technical demo of the integrated capability. 
 
 Dashboard, the primary output for this project, has the capability to display the following: 
   - Raw data input  
