@@ -1,0 +1,142 @@
+{
+  "job_id": "adv-2",
+  "job_type": "anomaly_detector",
+  "job_version": "7.12.0",
+  "create_time": 1617415311251,
+  "finished_time": 1617417212248,
+  "model_snapshot_id": "1617417197",
+  "groups": [
+    "dhs-cisa"
+  ],
+  "description": "",
+  "analysis_config": {
+    "bucket_span": "15s",
+    "detectors": [
+      {
+        "detector_description": "count by \"TargetObject.keyword\" partitionfield=\"Image.keyword\"",
+        "function": "count",
+        "by_field_name": "TargetObject.keyword",
+        "partition_field_name": "Image.keyword",
+        "detector_index": 0
+      }
+    ],
+    "influencers": []
+  },
+  "analysis_limits": {
+    "model_memory_limit": "315mb",
+    "categorization_examples_limit": 4
+  },
+  "data_description": {
+    "time_field": "@timestamp",
+    "time_format": "epoch_ms"
+  },
+  "model_plot_config": {
+    "enabled": false,
+    "annotations_enabled": false
+  },
+  "model_snapshot_retention_days": 10,
+  "daily_model_snapshot_retention_after_days": 1,
+  "results_index_name": "shared",
+  "allow_lazy_open": false,
+  "data_counts": {
+    "job_id": "adv-2",
+    "processed_record_count": 783367,
+    "processed_field_count": 748088,
+    "input_bytes": 95802594,
+    "input_field_count": 748088,
+    "invalid_date_count": 0,
+    "missing_field_count": 818646,
+    "out_of_order_timestamp_count": 0,
+    "empty_bucket_count": 1063,
+    "sparse_bucket_count": 11,
+    "bucket_count": 1336,
+    "earliest_record_timestamp": 1588388126493,
+    "latest_record_timestamp": 1588408163303,
+    "last_data_time": 1617417193030,
+    "latest_empty_bucket_timestamp": 1588407000000,
+    "latest_sparse_bucket_timestamp": 1588389810000,
+    "input_record_count": 783367,
+    "log_time": 1617417193030,
+    "latest_bucket_timestamp": 1588408155000
+  },
+  "model_size_stats": {
+    "job_id": "adv-2",
+    "result_type": "model_size_stats",
+    "model_bytes": 324689488,
+    "peak_model_bytes": 325155950,
+    "model_bytes_exceeded": 26286,
+    "model_bytes_memory_limit": 330301440,
+    "total_by_field_count": 16720,
+    "total_over_field_count": 0,
+    "total_partition_field_count": 190,
+    "bucket_allocation_failures_count": 146,
+    "memory_status": "hard_limit",
+    "assignment_memory_basis": "current_model_bytes",
+    "categorized_doc_count": 0,
+    "total_category_count": 0,
+    "frequent_category_count": 0,
+    "rare_category_count": 0,
+    "dead_category_count": 0,
+    "failed_category_count": 0,
+    "categorization_status": "ok",
+    "log_time": 1617417197974,
+    "timestamp": 1588408140000
+  },
+  "forecasts_stats": {
+    "total": 0,
+    "forecasted_jobs": 0
+  },
+  "state": "closed",
+  "timing_stats": {
+    "job_id": "adv-2",
+    "bucket_count": 1336,
+    "total_bucket_processing_time_ms": 1852234.0000000007,
+    "minimum_bucket_processing_time_ms": 0,
+    "maximum_bucket_processing_time_ms": 11504,
+    "average_bucket_processing_time_ms": 1386.402694610779,
+    "exponential_average_bucket_processing_time_ms": 1467.446606600997,
+    "exponential_average_bucket_processing_time_per_hour_ms": 277934.3760986485
+  },
+  "datafeed_config": {
+    "datafeed_id": "datafeed-adv-2",
+    "job_id": "adv-2",
+    "query_delay": "101411ms",
+    "chunking_config": {
+      "mode": "auto"
+    },
+    "indices_options": {
+      "expand_wildcards": [
+        "open"
+      ],
+      "ignore_unavailable": false,
+      "allow_no_indices": true,
+      "ignore_throttled": true
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match_all": {}
+          }
+        ]
+      }
+    },
+    "frequency": "15s",
+    "indices": [
+      "logstashindex*"
+    ],
+    "scroll_size": 1000,
+    "delayed_data_check_config": {
+      "enabled": true
+    },
+    "state": "stopped",
+    "timing_stats": {
+      "job_id": "adv-2",
+      "search_count": 844,
+      "bucket_count": 1336,
+      "total_search_time_ms": 17334,
+      "average_search_time_per_bucket_ms": 12.974550898203592,
+      "exponential_average_search_time_per_hour_ms": 4897.2199975128515
+    }
+  }
+}

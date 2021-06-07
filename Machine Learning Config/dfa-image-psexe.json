@@ -1,0 +1,55 @@
+{
+  "id": "dfa-psexe",
+  "create_time": 1618585771649,
+  "version": "7.12.0",
+  "description": "",
+  "source": {
+    "index": [
+      "logstashindex*"
+    ],
+    "query": {
+      "bool": {
+        "should": [
+          {
+            "query_string": {
+              "fields": [
+                "Image"
+              ],
+              "query": "psexe*"
+            }
+          }
+        ],
+        "minimum_should_match": 1
+      }
+    }
+  },
+  "dest": {
+    "index": "dfa-psexe",
+    "results_field": "ml"
+  },
+  "analysis": {
+    "outlier_detection": {
+      "compute_feature_influence": true,
+      "outlier_fraction": 0.05,
+      "standardization_enabled": true
+    }
+  },
+  "analyzed_fields": {
+    "includes": [
+      "EventID",
+      "ExecutionProcessID",
+      "Keywords",
+      "OpcodeValue",
+      "RecordNumber",
+      "SeverityValue",
+      "Task",
+      "ThreadID",
+      "Version",
+      "port"
+    ],
+    "excludes": []
+  },
+  "model_memory_limit": "1mb",
+  "allow_lazy_start": false,
+  "max_num_threads": 2
+}

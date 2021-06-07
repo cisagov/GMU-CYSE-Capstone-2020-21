@@ -1,0 +1,149 @@
+{
+  "job_id": "cat-rare-1",
+  "job_type": "anomaly_detector",
+  "job_version": "7.12.0",
+  "create_time": 1617481258331,
+  "finished_time": 1617481390398,
+  "model_snapshot_id": "1617481388",
+  "custom_settings": {
+    "created_by": "categorization-wizard"
+  },
+  "groups": [
+    "dhs-cisa"
+  ],
+  "description": "",
+  "analysis_config": {
+    "bucket_span": "1m",
+    "categorization_field_name": "Image",
+    "per_partition_categorization": {
+      "enabled": false
+    },
+    "detectors": [
+      {
+        "detector_description": "rare by mlcategory",
+        "function": "rare",
+        "by_field_name": "mlcategory",
+        "detector_index": 0
+      }
+    ],
+    "influencers": [
+      "mlcategory"
+    ]
+  },
+  "analysis_limits": {
+    "model_memory_limit": "21mb",
+    "categorization_examples_limit": 4
+  },
+  "data_description": {
+    "time_field": "@timestamp",
+    "time_format": "epoch_ms"
+  },
+  "model_plot_config": {
+    "enabled": false,
+    "annotations_enabled": false
+  },
+  "model_snapshot_retention_days": 10,
+  "daily_model_snapshot_retention_after_days": 1,
+  "results_index_name": "shared",
+  "allow_lazy_open": false,
+  "data_counts": {
+    "job_id": "cat-rare-1",
+    "processed_record_count": 783367,
+    "processed_field_count": 412440,
+    "input_bytes": 43208255,
+    "input_field_count": 412440,
+    "invalid_date_count": 0,
+    "missing_field_count": 370927,
+    "out_of_order_timestamp_count": 0,
+    "empty_bucket_count": 265,
+    "sparse_bucket_count": 4,
+    "bucket_count": 334,
+    "earliest_record_timestamp": 1588388126493,
+    "latest_record_timestamp": 1588408163303,
+    "last_data_time": 1617481387932,
+    "latest_empty_bucket_timestamp": 1588405980000,
+    "latest_sparse_bucket_timestamp": 1588390020000,
+    "input_record_count": 783367,
+    "log_time": 1617481387932,
+    "latest_bucket_timestamp": 1588408140000
+  },
+  "model_size_stats": {
+    "job_id": "cat-rare-1",
+    "result_type": "model_size_stats",
+    "model_bytes": 286258,
+    "peak_model_bytes": 580276,
+    "model_bytes_exceeded": 0,
+    "model_bytes_memory_limit": 22020096,
+    "total_by_field_count": 53,
+    "total_over_field_count": 0,
+    "total_partition_field_count": 2,
+    "bucket_allocation_failures_count": 0,
+    "memory_status": "ok",
+    "assignment_memory_basis": "current_model_bytes",
+    "categorized_doc_count": 412440,
+    "total_category_count": 50,
+    "frequent_category_count": 6,
+    "rare_category_count": 0,
+    "dead_category_count": 0,
+    "failed_category_count": 0,
+    "categorization_status": "ok",
+    "log_time": 1617481388377,
+    "timestamp": 1588408080000
+  },
+  "forecasts_stats": {
+    "total": 0,
+    "forecasted_jobs": 0
+  },
+  "state": "closed",
+  "timing_stats": {
+    "job_id": "cat-rare-1",
+    "bucket_count": 334,
+    "total_bucket_processing_time_ms": 96.00000000000001,
+    "minimum_bucket_processing_time_ms": 0,
+    "maximum_bucket_processing_time_ms": 8,
+    "average_bucket_processing_time_ms": 0.28742514970059885,
+    "exponential_average_bucket_processing_time_ms": 0.4704343802252593,
+    "exponential_average_bucket_processing_time_per_hour_ms": 22.331040630938176
+  },
+  "datafeed_config": {
+    "datafeed_id": "datafeed-cat-rare-1",
+    "job_id": "cat-rare-1",
+    "query_delay": "98784ms",
+    "chunking_config": {
+      "mode": "auto"
+    },
+    "indices_options": {
+      "expand_wildcards": [
+        "open"
+      ],
+      "ignore_unavailable": false,
+      "allow_no_indices": true,
+      "ignore_throttled": true
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match_all": {}
+          }
+        ]
+      }
+    },
+    "indices": [
+      "logstashindex*"
+    ],
+    "scroll_size": 1000,
+    "delayed_data_check_config": {
+      "enabled": true
+    },
+    "state": "stopped",
+    "timing_stats": {
+      "job_id": "cat-rare-1",
+      "search_count": 842,
+      "bucket_count": 334,
+      "total_search_time_ms": 118946,
+      "average_search_time_per_bucket_ms": 356.125748502994,
+      "exponential_average_search_time_per_hour_ms": 35505.304644904994
+    }
+  }
+}
