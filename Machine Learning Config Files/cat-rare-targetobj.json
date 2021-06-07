@@ -1,0 +1,149 @@
+{
+  "job_id": "cat-rare-targetobj",
+  "job_type": "anomaly_detector",
+  "job_version": "7.12.0",
+  "create_time": 1617587260332,
+  "finished_time": 1617587401825,
+  "model_snapshot_id": "1617587400",
+  "custom_settings": {
+    "created_by": "categorization-wizard"
+  },
+  "groups": [
+    "dhs-cisa"
+  ],
+  "description": "",
+  "analysis_config": {
+    "bucket_span": "1m",
+    "categorization_field_name": "TargetObject",
+    "per_partition_categorization": {
+      "enabled": false
+    },
+    "detectors": [
+      {
+        "detector_description": "rare by mlcategory",
+        "function": "rare",
+        "by_field_name": "mlcategory",
+        "detector_index": 0
+      }
+    ],
+    "influencers": [
+      "mlcategory"
+    ]
+  },
+  "analysis_limits": {
+    "model_memory_limit": "21mb",
+    "categorization_examples_limit": 4
+  },
+  "data_description": {
+    "time_field": "@timestamp",
+    "time_format": "epoch_ms"
+  },
+  "model_plot_config": {
+    "enabled": false,
+    "annotations_enabled": false
+  },
+  "model_snapshot_retention_days": 10,
+  "daily_model_snapshot_retention_after_days": 1,
+  "results_index_name": "shared",
+  "allow_lazy_open": false,
+  "data_counts": {
+    "job_id": "cat-rare-targetobj",
+    "processed_record_count": 783367,
+    "processed_field_count": 342814,
+    "input_bytes": 71545707,
+    "input_field_count": 342814,
+    "invalid_date_count": 0,
+    "missing_field_count": 440553,
+    "out_of_order_timestamp_count": 0,
+    "empty_bucket_count": 265,
+    "sparse_bucket_count": 4,
+    "bucket_count": 334,
+    "earliest_record_timestamp": 1588388126493,
+    "latest_record_timestamp": 1588408163303,
+    "last_data_time": 1617587398480,
+    "latest_empty_bucket_timestamp": 1588405980000,
+    "latest_sparse_bucket_timestamp": 1588390020000,
+    "input_record_count": 783367,
+    "log_time": 1617587398480,
+    "latest_bucket_timestamp": 1588408140000
+  },
+  "model_size_stats": {
+    "job_id": "cat-rare-targetobj",
+    "result_type": "model_size_stats",
+    "model_bytes": 3134492,
+    "peak_model_bytes": 3134492,
+    "model_bytes_exceeded": 0,
+    "model_bytes_memory_limit": 22020096,
+    "total_by_field_count": 305,
+    "total_over_field_count": 0,
+    "total_partition_field_count": 2,
+    "bucket_allocation_failures_count": 0,
+    "memory_status": "ok",
+    "assignment_memory_basis": "current_model_bytes",
+    "categorized_doc_count": 342814,
+    "total_category_count": 302,
+    "frequent_category_count": 13,
+    "rare_category_count": 41,
+    "dead_category_count": 116,
+    "failed_category_count": 0,
+    "categorization_status": "ok",
+    "log_time": 1617587400144,
+    "timestamp": 1588408080000
+  },
+  "forecasts_stats": {
+    "total": 0,
+    "forecasted_jobs": 0
+  },
+  "state": "closed",
+  "timing_stats": {
+    "job_id": "cat-rare-targetobj",
+    "bucket_count": 334,
+    "total_bucket_processing_time_ms": 116.00000000000003,
+    "minimum_bucket_processing_time_ms": 0,
+    "maximum_bucket_processing_time_ms": 4,
+    "average_bucket_processing_time_ms": 0.34730538922155696,
+    "exponential_average_bucket_processing_time_ms": 0.5794061581818348,
+    "exponential_average_bucket_processing_time_per_hour_ms": 27.502117569430734
+  },
+  "datafeed_config": {
+    "datafeed_id": "datafeed-cat-rare-targetobj",
+    "job_id": "cat-rare-targetobj",
+    "query_delay": "73146ms",
+    "chunking_config": {
+      "mode": "auto"
+    },
+    "indices_options": {
+      "expand_wildcards": [
+        "open"
+      ],
+      "ignore_unavailable": false,
+      "allow_no_indices": true,
+      "ignore_throttled": true
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match_all": {}
+          }
+        ]
+      }
+    },
+    "indices": [
+      "logstashindex*"
+    ],
+    "scroll_size": 1000,
+    "delayed_data_check_config": {
+      "enabled": true
+    },
+    "state": "stopped",
+    "timing_stats": {
+      "job_id": "cat-rare-targetobj",
+      "search_count": 842,
+      "bucket_count": 334,
+      "total_search_time_ms": 126294,
+      "average_search_time_per_bucket_ms": 378.125748502994,
+      "exponential_average_search_time_per_hour_ms": 38198.343218706534
+    }
+  }
+}
