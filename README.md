@@ -1,10 +1,10 @@
 # GMU-CYSE-Capstone-2020-21
 
-## 1.0 Executive Summary 
+### 1.0 Executive Summary 
 
 This Request for Proposal (RFP) is focused on Anomaly Detection Analysis.   
 
-## 2.0 Objectives 
+### 2.0 Objectives 
 
 Anomaly detection analysis is the subject of the proposed project. The desired deliverable is an integrated product that includes 
  1. algorithm for analyzing relevant data, 
@@ -32,7 +32,7 @@ CISA team jointly with Elastic will provide all supporting documentation to brin
 
 CISA technical SME will provide input on a starting dataset to seed the capstone research. However, it is anticipated the students will enrich their learning experience by seeking additional publicly available datasets or creating their own log files for analysis.  
 
-## 3.0 Statement of Work / Requirements 
+### 3.0 Statement of Work / Requirements 
 
 In order to develop the integrated dashboard for anomaly detection analysis, the team will perform the following: 
 
@@ -103,7 +103,7 @@ Please also explore the content of the DHS S&T project IMPACT:
 - Design and implement “Alerts and Recommended Actions” capability: 
 - Capability to map analytic results to mitigations or trigger alerts on the Kibana dashboard 
 
-## 4.0 Customer Provided Materials and Information	 
+### 4.0 Customer Provided Materials and Information	 
 DHS will provide technical support and information to enable this project to be successful.   
 
 The following are references that will be provided to inform the project team. 
@@ -118,7 +118,7 @@ The following are references that will be provided to inform the project team.
   - Advanced Machine Learning with Python: by J. Hearty (2016) | Packt Publishing   Retrieved from www.PacktPub.com 
      - www.PacktPub.com contains a lot of free resources on python coding, machine learning (supervised, unsupervised), deep learning, as well as additional manuals for Kibana and Elasticsearch (https://www.elastic.co/products/elastic-stack) 
 
-## 5.0 Project Deliverables 
+### 5.0 Project Deliverables 
 
 The contractor shall generate a project plan and propose deliverables that are appropriate for the project.  
 
@@ -160,7 +160,7 @@ The following items must be included in this project as part of the course assig
   - CLIN-7 Final Report and Team Presentation 
   - CLIN-8 Product Specifications 
 
-## 6.0 Terms and Conditions 
+### 6.0 Terms and Conditions 
 
 **6.1 Work Location**   
 
@@ -181,7 +181,7 @@ Does this Project require US Citizenship (Yes or No)?
 
 No. 
 
-## 7.0 Proposal Guidelines and Requirements 
+### 7.0 Proposal Guidelines and Requirements 
 
 The student team shall provide a response to this RFP using the following outline: 
 
@@ -219,5 +219,5 @@ d) Project Cost
 ![image](https://user-images.githubusercontent.com/84741121/121232191-55b05580-c85f-11eb-882f-7da6f888a1cd.png)
 
  
-## Appendix A Customer’s Technical Specifications 
+### Appendix A Customer’s Technical Specifications 
 Additional technical specifications will be provided as necessary to inform the project work. 
