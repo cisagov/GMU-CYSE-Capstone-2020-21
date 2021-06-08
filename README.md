@@ -1,4 +1,4 @@
-# GMU-CYSE-Capstone-2020-21
+## GMU-CYSE-Capstone-2020-21
 
 ### 1.0 Executive Summary 
 
