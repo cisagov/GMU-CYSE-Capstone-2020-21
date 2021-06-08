@@ -32,7 +32,7 @@ CISA technical SME will provide input on a starting dataset to seed the capstone
 
 In order to develop the integrated dashboard for anomaly detection analysis, the team will perform the following: 
 
-**Task 1 
+**Task 1** 
 
 Find the following public datasets (or generate it from the built environment described below): 
 - Outside the network looking for suspicious connections  
@@ -54,7 +54,7 @@ Potential sources for the datasets are:
 Please also explore the content of the DHS S&T project IMPACT: 
 - https://www.dhs.gov/csd-impact, specifically https://ImpactCyberTrust.org/search.  
 
-**Task 2 
+**Task 2**
 
 - Build environment using Elastic Cloud (SaaS) is preferred.   
 - Students will be provisioned student accounts to an Elastic cloud instance (Cloud UI).   
@@ -69,7 +69,7 @@ Please also explore the content of the DHS S&T project IMPACT:
    - Machine Learning in the Elastic Stack  
 - Elasticsearch, Kibana, Logstash and Machine Learning in the Elastic Stack will serve as a starting point to support basic research at the beginning of the project.  
 
-**Task 3 
+**Task 3**
 
 - Ingest time series data into Elasticsearch indexes.   
 - Students will utilize a combination of the following tools for data ingest: 
@@ -79,14 +79,14 @@ Please also explore the content of the DHS S&T project IMPACT:
    - Logstash comes with Elastic. Logstash is a powerful and flexible tool to read, process, and ship data of any kind.   A common architectural        pattern is to combine Beats and Logstash: use Beats to collect data and use Logstash to perform any data processing that Beats are not            capable of doing. 
  - Students will define index templates with settings and mappings for the data attributes to be ingested.    
 
-**Task 4 
+**Task 4**
 
 - Build the dashboard in Kibana. 
 - Design and implement data visualization(s). 
   - Add index patterns to Kibana. 
   - Add visualizations to Kibana and identify the best way to view results (Ex: Cluster graphs)  
 
-**Task 5 
+**Task 5**
 
 - Use anomaly detection to analyze time series data by creating accurate baselines of normal behavior and identifying anomalous patterns in your     dataset. Data is pulled from Elasticsearch for analysis and anomaly results are displayed in Kibana dashboards. 
 - Create anomaly detection jobs to analyze datasets.   
@@ -95,7 +95,7 @@ Please also explore the content of the DHS S&T project IMPACT:
   - Operations datasets: Elastic’s machine learning currently is focused on providing added value to time series data such as log files,               application metrics, system performance metrics, network flows, and other transactional data that can be collected and stored in                   Elasticsearch.  The key to getting good information is building a model of key indicators that occur with regularity throughout a data set.       When working with log data, some examples of regularly occurring key indicators would be HTTP status codes in Apache or Nginx web server           messages, or message codes in Cisco IOS messages. These key indicators occur regularly enough to be trended over a time period for the number     of times they occur. Metrics for memory utilization or duration counters are another example of regularly occurring key indicators. These         numerical fields can be averaged over a period of time so that the machine learning algorithms can model. It is best to use indicators that       stay fairly constant from one time period to the next, so it is important not to make the time period too small, where the indicators could       change significantly over a time interval. 
   - Security datasets: While threshold-based event notification is powerful, such as triggering a notification when a successful login is preceded     by multiple unsuccessful logins, the ability to automate the detection of anomalous behavior without having to define specific data conditions     simplifies the experience for the security analyst. That said, as we mentioned above, we're talking about mathematics, not magic, so the           machine learning engine must be given its marching orders as settings in its job configuration. Since the engine can model any type of time-       series data - numerical or categorical - the types of machine learning jobs that can be configured are unlimited. While this is flexible, it       can be a bit too much for a security analyst who really just wants to find threats. Here we introduce the concept of machine learning             "recipes" for security use cases. Recipes describe how to configure machine learning jobs, so that we can use automated anomaly detection to       uncover elementary attack behaviors that can be difficult to detect using other means. Elementary attack behaviors include activities such as     DNS tunneling, web data exfiltration, suspicious endpoint process execution, and more. 
 
-**Task 6 
+**Task 6** 
 - Design and implement “Alerts and Recommended Actions” capability: 
 - Capability to map analytic results to mitigations or trigger alerts on the Kibana dashboard 
 
@@ -158,20 +158,20 @@ The following items must be included in this project as part of the course assig
 
 ## 6.0 Terms and Conditions 
 
-**6.1 Work Location   
+**6.1 Work Location**   
 
 Projects will be performed at George Mason University, Fairfax, VA, unless other arrangements have been negotiated.  This includes virtual project work performed in remote student locations in accordance with current George Mason University policies and guidance. 
 
-**6.2 Best Effort Basis 
+**6.2 Best Effort Basis**
 
 This work scope is to be performed on a best effort basis. 
 
-**6.3 Handling of Restricted Data 
+**6.3 Handling of Restricted Data**
 
 Students, faculty, and administration are prohibited from signing any Intellectual Property agreements or Non-Disclosure agreements.  These are University policies and there are no exceptions.  No project work may include elements that are deemed For Official Use Only, Proprietary, Sensitive, or Classified.  Posters will be publicly displayed and Project Notebooks will be publicly available.  The Sponsor has the right to specify that their project team be comprised of US citizens; however, this does not imply allowance of Import/Export restricted information flow.  Students nor faculty nor administration can receive ITAR restricted information or data.  Should a company require approval of the Poster or other materials before public display, it is the responsibility of the Sponsor to ensure that such approval is secured in a proper and timely fashion and according to the requirements of the Sponsor's firm.  Sponsoring companies must assume widespread discrimination of provided technical and project information.  This includes other students, faculty, administration and even competitors in the marketplace as this is a totally open project.  In any event, GMU shall be held harmless for the public display of project materials.  
 
  
-**6.4 Citizenship.   
+**6.4 Citizenship.**   
 
 Does this Project require US Citizenship (Yes or No)?  
 
@@ -181,11 +181,11 @@ No.
 
 The student team shall provide a response to this RFP using the following outline: 
 
-**Part 1 Technical Proposal  
+**Part 1 Technical Proposal**
 
 Provide a detailed description of the project requirements, technical approach, and deliverables.  Use tables and figures to demonstrate your understanding and describe the approach.  Teams are encouraged to incorporate iterative, agile lifecycle approaches especially in cases where exact outcomes are difficult to define at the beginning of the project. 
 
-**Part 2 Cost and Management Proposal 
+**Part 2 Cost and Management Proposal**
 
 At a minimum this section requires the following four items: 
   a) Organization Chart and Qualifications 
