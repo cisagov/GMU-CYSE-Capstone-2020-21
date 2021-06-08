@@ -6,7 +6,11 @@ This Request for Proposal (RFP) is focused on Anomaly Detection Analysis.
 
 ## 2.0 Objectives 
 
-Anomaly detection analysis is the subject of the proposed project. The desired deliverable is an integrated product that includes a) algorithm for analyzing relevant data, b) dashboard for visualization of the analytic results, c) modeling documentation and user manual, d) technical demo of the integrated capability. 
+Anomaly detection analysis is the subject of the proposed project. The desired deliverable is an integrated product that includes 
+ 1. algorithm for analyzing relevant data, 
+ 2. dashboard for visualization of the analytic results, 
+ 3. modeling documentation and user manual, 
+ 4. technical demo of the integrated capability. 
 
 Dashboard, the primary output for this project, should have the capability to display the following: 
 - Raw data input  
@@ -188,10 +192,10 @@ Provide a detailed description of the project requirements, technical approach, 
 **Part 2 Cost and Management Proposal**
 
 At a minimum this section requires the following four items: 
-  a) Organization Chart and Qualifications 
-  b) Work Breakdown Structure (WBS) 
-  c) Project Schedule 
-  d) Project Cost - Weekly projected applied hours graph and estimated non-labor cost 
+  1. Organization Chart and Qualifications 
+  2. Work Breakdown Structure (WBS) 
+  3. Project Schedule 
+  4. Project Cost - Weekly projected applied hours graph and estimated non-labor cost 
 
 Examples are shown below.  Student teams must include the types of information shown but may modify format and add details as desired. 
 
