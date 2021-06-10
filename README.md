@@ -123,10 +123,10 @@ The following are references that will be provided to inform the project team.
 The contractor shall generate a project plan and propose deliverables that are appropriate for the project.  
 
 The sponsor-specific desired deliverable is an integrated product that includes: 
-  - algorithm for analyzing relevant data (i.e. Elastic’s out-of-the-box machine learning algorithm for anomaly detection), 
-  - dashboard for visualization of the analytic results,  
-  - modeling documentation and user manual,  
-  - technical demo of the integrated capability.  
+  - algorithm for analyzing relevant data (i.e. Elastic’s out-of-the-box machine learning algorithm for anomaly detection) 
+  - dashboard for visualization of the analytic results  
+  - modeling documentation and user manual  
+  - technical demo of the integrated capability  
 Please see previous sections for a more detailed description of the desired output and deliverables. 
 
 The following technical approach is envisioned to accomplish the project. 
