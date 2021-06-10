@@ -7,10 +7,10 @@ This Request for Proposal (RFP) is focused on Anomaly Detection Analysis.
 ### 2.0 Objectives 
 
 Anomaly detection analysis is the subject of the proposed project. The desired deliverable is an integrated product that includes 
- 1. algorithm for analyzing relevant data, 
- 2. dashboard for visualization of the analytic results, 
- 3. modeling documentation and user manual, 
- 4. technical demo of the integrated capability. 
+ 1. algorithm for analyzing relevant data 
+ 2. dashboard for visualization of the analytic results 
+ 3. modeling documentation and user manual 
+ 4. technical demo of the integrated capability 
 
 Dashboard, the primary output for this project, should have the capability to display the following: 
 - Raw data input  
