@@ -23,7 +23,7 @@ Prerequisites:
 - Knowledge of supervised (unsupervised preferred) machine learning  
 - Knowledge of Log Analysis and time series data 
 - Knowledge of basic software application with web-server front end and database back-end 
-- Knowledge of basic network traffic analysis. 
+- Knowledge of basic network traffic analysis 
 
 
 Students must be familiar with the principles of IT Operations and Security Analytics. Experience with log time series data in an operational setting is desired but not required.  Students should have a strong desire to learn how to safely and effectively conduct threat monitoring or threat hunting in the cloud and the role of machine learning. 
@@ -87,7 +87,7 @@ Please also explore the content of the DHS S&T project IMPACT:
 
 - Build the dashboard in Kibana. 
 - Design and implement data visualization(s). 
-  - Add index patterns to Kibana. 
+  - Add index patterns to Kibana
   - Add visualizations to Kibana and identify the best way to view results (Ex: Cluster graphs)  
 
 **Task 5**
